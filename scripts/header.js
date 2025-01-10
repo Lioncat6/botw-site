@@ -1,10 +1,12 @@
 function toHome() {
+    const path = window.parent.location.pathname;
     if (path != "/") {
         window.parent.location.assign("/");
     }
 }
 
 function toCoordinates() {
+    const path = window.parent.location.pathname;
     if (path != "/coordinates/") {
         window.parent.location.assign("/coordinates");
     }
