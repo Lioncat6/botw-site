@@ -82,3 +82,8 @@ a:hover {
 embed.header {
     height: 50px;
 }
+
+embed.footer {
+    position: absolute;
+    bottom: 0;
+}
