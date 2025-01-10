@@ -1,3 +1,21 @@
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOutToTop {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
 header {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,21 +24,12 @@ header {
     text-align: center;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-}
-
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+    animation: slideInFromTop 0.5s ease-out;
+    visibility: hidden; /* Initially hide the header */
 }
 
 a:hover {
@@ -40,16 +49,16 @@ a:hover {
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.1s ease;
     box-shadow: 2px 2px 0 #000, 4px 4px 0 #555;
+    font-weight: bold;
 }
 
 .navButton:hover {
     background-color: #3d3d3d;
     box-shadow: inset 2px 2px 0 #000, inset 4px 4px 0 #555;
-
+    text-decoration: none;
 }
 
-.navButton :not(.selected){
-
+.navButton:not(.selected) {
 }
 
 .navButton.selected {

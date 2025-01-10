@@ -1,3 +1,21 @@
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOutToBottom {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
 footer {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,6 +28,8 @@ footer {
     padding: 10px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    animation: slideInFromBottom 0.5s ease-out;
+    visibility: hidden; /* Initially hide the footer */
 }
 
 body, html {
