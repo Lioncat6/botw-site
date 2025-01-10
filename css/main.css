@@ -1,122 +1,145 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+	height: 100%;
 }
 
 #about {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 1);
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 1);
+	margin: 20px auto;
+	max-width: 800px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
 }
 
 #buttons {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 800px;
+	text-align: center;
+	margin: 20px auto;
+	max-width: 800px;
 }
 
 .button {
-    width: 400px;
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #302c4e;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #000;
-    border-radius: 0;
-    font-family: 'Minecraft', sans-serif;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.1s ease;
-    box-shadow: 2px 2px 0 #000, 4px 4px 0 #1a182b;
+	width: 400px;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	background-color: #302c4e;
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #000;
+	border-radius: 0;
+	font-family: "Minecraft", sans-serif;
+	font-size: 16px;
+	transition: background-color 0.3s ease, transform 0.1s ease;
+	box-shadow: 2px 2px 0 #000, 4px 4px 0 #1a182b;
 }
 
 .button:hover {
-    background-color: #24213b;
-    box-shadow: inset 2px 2px 0 #000, inset 4px 4px 0 #1a182b;
+	background-color: #24213b;
+	box-shadow: inset 2px 2px 0 #000, inset 4px 4px 0 #1a182b;
+    text-decoration: none !important;
 }
 
-#download  {
+#expansion:hover {
+    position: relative;
+}
 
+#expansion::after {
+    content: "Coming Soon";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#expansion:hover::after {
+    opacity: 1;
 }
 
 #content {
-    font-family: Arial, sans-serif;
-    background-color: rgba(155, 155, 155, 0.3);
-    border-radius: 10px;
-    margin: 0;
-    padding: 60px 20px 60px 20px; /* Add padding to the top and bottom */
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 50%;
-    text-align: center;
-    min-width: 500px;
+	font-family: Arial, sans-serif;
+	background-color: rgba(155, 155, 155, 0.3);
+	border-radius: 10px;
+	margin: 0;
+	padding: 60px 20px 60px 20px; /* Add padding to the top and bottom */
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	min-width: 500px;
 }
 
 footer {
-    bottom: 0;
-    position: fixed; /* Change to fixed */
-    width: 100%;
+	bottom: 0;
+	position: fixed; /* Change to fixed */
+	width: 100%;
 }
 
 header {
-    top: 0;
-    position: fixed; /* Change to fixed */
-    width: 100%;
+	top: 0;
+	position: fixed; /* Change to fixed */
+	width: 100%;
 }
 
 embed {
-    width: 100%;
-    padding: 0;
+	width: 100%;
+	padding: 0;
 }
 
 a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 embed.header {
-    height: 50px;
+	height: 50px;
 }
 
 embed.footer {
-    position: absolute;
-    bottom: 0;
+	position: absolute;
+	bottom: 0;
 }
 
 body {
-    backdrop-filter: blur(10px);
-    background-repeat: no-repeat;
-    background-size:cover;
+	backdrop-filter: blur(10px);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .bg1 {
-    background-image: url("/assets/images/bg1.webp");
+	background-image: url("/assets/images/bg1.webp");
 }
 .bg2 {
-    background-image: url("/assets/images/bg2.webp");
+	background-image: url("/assets/images/bg2.webp");
 }
 
 .bg3 {
-    background-image: url("/assets/images/bg3.webp");
+	background-image: url("/assets/images/bg3.webp");
 }
 
 .bg4 {
-    background-image: url("/assets/images/bg4.webp");
+	background-image: url("/assets/images/bg4.webp");
 }
