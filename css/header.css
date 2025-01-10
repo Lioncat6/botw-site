@@ -58,5 +58,5 @@ a:hover {
 }
 
 .navButton + .navButton {
-    margin-left: -4px; /* Remove gap between buttons */
+    margin-left: -5px; /* Remove gap between buttons */
 }

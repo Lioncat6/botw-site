@@ -1,9 +1,13 @@
 function toHome() {
-    window.parent.location.assign("/");
+    if (path != "/") {
+        window.parent.location.assign("/");
+    }
 }
 
 function toCoordinates() {
-    window.parent.location.assign("/coordinates");
+    if (path != "/coordinates/") {
+        window.parent.location.assign("/coordinates");
+    }
 }
 
 function setSelectedButton() {
