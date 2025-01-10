@@ -12,10 +12,11 @@ html, body {
 
 #about {
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
     margin: 20px auto;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 #buttons {
@@ -41,7 +42,8 @@ html, body {
 
 #content {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: rgba(155, 155, 155, 0.3);
+    border-radius: 10px;
     margin: 0;
     padding: 60px 20px 60px 20px; /* Add padding to the top and bottom */
     display: flex;
@@ -86,4 +88,25 @@ embed.header {
 embed.footer {
     position: absolute;
     bottom: 0;
+}
+
+body {
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.bg1 {
+    background-image: url("/assets/images/bg1.webp");
+}
+.bg2 {
+    background-image: url("/assets/images/bg2.webp");
+}
+
+.bg3 {
+    background-image: url("/assets/images/bg3.webp");
+}
+
+.bg4 {
+    background-image: url("/assets/images/bg4.webp");
 }
