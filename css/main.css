@@ -44,6 +44,10 @@ body {
 	max-width: 85%;
 }
 
+.button p {
+	display: inline;
+}
+
 .button:hover {
 	background-color: #24213b;
 	box-shadow: inset 2px 2px 0 #000, inset 4px 4px 0 #1a182b;
@@ -77,6 +81,7 @@ body {
 	font-family: Arial, sans-serif;
 	white-space: nowrap;
 	opacity: 0;
+	pointer-events: none;
 }
 
 #expansion:hover::after {
@@ -166,4 +171,48 @@ body {
 	max-width: 90%;
 	aspect-ratio: 16 / 9;
 	height: auto;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease, background-color 0.5s ease;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    z-index: 0;
+}
+
+.banner:hover::before {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.banner i,
+.banner p {
+    position: relative;
+    z-index: 1;
+}
+
+.banner:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+}
+
+#download {
+    background-image: url(/assets/images/botwDownload.webp);
+}
+
+#discord {
+    background-image: url(/assets/images/discordBanner.webp);
 }

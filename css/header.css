@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
 @keyframes slideInFromTop {
     0% {
         transform: translateY(-100%);
@@ -19,7 +21,7 @@
 header {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: #ffffffe8;
     color: black;
     text-align: center;
     position: fixed;
@@ -56,6 +58,8 @@ a:hover {
     background-color: #3d3d3d;
     box-shadow: inset 2px 2px 0 #000, inset 4px 4px 0 #555;
     text-decoration: none;
+    color: #dbdbdb;
+
 }
 
 .navButton:not(.selected) {
@@ -64,8 +68,31 @@ a:hover {
 .navButton.selected {
     background-color: #3d3d3d;
     box-shadow: inset 2px 2px 0 #000, inset 4px 4px 0 #555;
+    color: #dbdbdb;
 }
 
 .navButton + .navButton {
     margin-left: -5px; /* Remove gap between buttons */
+}
+
+.title {
+    position: absolute;
+    display: inline-flex;
+    left: 5px;
+    top: 11px;
+    margin: auto;
+    font-weight: 600;
+    font-family: "Exo 2", serif;
+}
+
+.title p {
+    position: inherit;
+    display: contents;
+    font-weight: 800;
+}
+
+@media (max-width: 950px) {
+    .title {
+        display: none;
+    }
 }
