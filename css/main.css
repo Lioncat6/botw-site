@@ -43,7 +43,7 @@ html, body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
-    padding: 0;
+    padding: 60px 20px 60px 20px; /* Add padding to the top and bottom */
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -53,17 +53,15 @@ html, body {
 }
 
 footer {
-    bottom:0;
-    position: absolute;
+    bottom: 0;
+    position: fixed; /* Change to fixed */
     width: 100%;
-
 }
 
 header {
-    top:0;
-    position: absolute;
+    top: 0;
+    position: fixed; /* Change to fixed */
     width: 100%;
-
 }
 
 embed {
