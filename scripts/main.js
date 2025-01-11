@@ -4,10 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
         coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.padding = "0 18px";
             } else {
-                content.style.display = "block";
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.padding = "10px 18px";
             }
         });
     }
