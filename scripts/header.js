@@ -26,13 +26,13 @@ function toCoordinates() {
     }, 200); // Match the duration of the fly-out animation
 }
 
-function toAbout() {
+function toFAQ() {
     document.querySelector('.navButton.home').classList.remove('selected');
     document.querySelector('.navButton.coordinates').classList.remove('selected');
     document.querySelector('.navButton.about').classList.add('selected');
     triggerFlyOutAnimation();
     setTimeout(() => {
-        window.parent.location.assign("/about");
+        window.parent.location.assign("/faq");
     }, 200); // Match the duration of the fly-out animation
 }
 
@@ -54,7 +54,7 @@ function setSelectedButton() {
         document.querySelector('.navButton.home').classList.add('selected');
     } else if (path == "/coordinates/") {
         document.querySelector('.navButton.coordinates').classList.add('selected');
-    } else if (path == "/about/") {
+    } else if (path == "/faq/") {
         document.querySelector('.navButton.about').classList.add('selected');
     }
 }
