@@ -19,7 +19,7 @@ jobs:
       id: sitemap
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://lioncat6.com/
+        base-url-path: https://botw.lioncat6.com/
         drop-html-extension: true
 
     - name: Output stats
