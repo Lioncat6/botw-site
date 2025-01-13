@@ -21,6 +21,10 @@ jobs:
       with:
         base-url-path: https://botw.lioncat6.com/
         drop-html-extension: true
+        exclude-paths: >
+          /404
+          /header
+          /footer
 
     - name: Output stats
       run: |
