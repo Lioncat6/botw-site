@@ -96,3 +96,7 @@ a:hover {
         display: none;
     }
 }
+
+body {
+    overflow: hidden;
+}
