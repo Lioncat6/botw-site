@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function toHome() {
+    playMenuClick()
     document.querySelector('.navButton.home').classList.add('selected');
     document.querySelector('.navButton.coordinates').classList.remove('selected');
     document.querySelector('.navButton.about').classList.remove('selected');
@@ -17,6 +18,7 @@ function toHome() {
 }
 
 function toCoordinates() {
+    playMenuClick()
     document.querySelector('.navButton.home').classList.remove('selected');
     document.querySelector('.navButton.coordinates').classList.add('selected');
     document.querySelector('.navButton.about').classList.remove('selected');
@@ -27,6 +29,7 @@ function toCoordinates() {
 }
 
 function toFAQ() {
+    playMenuClick()
     document.querySelector('.navButton.home').classList.remove('selected');
     document.querySelector('.navButton.coordinates').classList.remove('selected');
     document.querySelector('.navButton.about').classList.add('selected');
@@ -60,3 +63,8 @@ function setSelectedButton() {
 }
 
 setSelectedButton();
+
+function playMenuClick() {
+    const audio = new Audio('/assets/audio/menuClick.mp3');
+    audio.play();
+}
