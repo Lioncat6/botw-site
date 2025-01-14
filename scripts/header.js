@@ -65,6 +65,9 @@ function setSelectedButton() {
 setSelectedButton();
 
 function playMenuClick() {
+    if (navigator.vibrate) {
+        navigator.vibrate(100); // Vibrate for 100 milliseconds
+    }
     const audio = new Audio('/assets/audio/menuClick.mp3');
     audio.play();
 }
